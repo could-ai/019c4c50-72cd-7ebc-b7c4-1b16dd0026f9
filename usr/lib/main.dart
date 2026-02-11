@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'screens/home_screen.dart';
+import 'screens/dashboard_screen.dart';
 import 'theme/app_theme.dart';
 
 void main() {
@@ -12,12 +12,12 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter App',
+      title: 'Task Manager',
       debugShowCheckedModeBanner: false,
       theme: AppTheme.lightTheme,
       initialRoute: '/',
       routes: {
-        '/': (context) => const HomeScreen(),
+        '/': (context) => const DashboardScreen(),
       },
     );
   }
